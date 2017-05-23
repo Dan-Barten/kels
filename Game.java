@@ -57,7 +57,10 @@ public class Game extends JPanel {
 		JOptionPane.showMessageDialog(this, "Game Over", "Game Over", JOptionPane.YES_NO_OPTION);
 		System.exit(ABORT);
 	}
-
+	public void gameWon() {
+		JOptionPane.showMessageDialog(this, "You win!", "Game Over", JOptionPane.YES_NO_OPTION);
+		System.exit(ABORT);
+	}
 	public static void main(String[] args) throws InterruptedException {
 		JFrame frame = new JFrame("Brick Break");
 		Game game = new Game();

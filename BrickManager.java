@@ -23,6 +23,9 @@ public class BrickManager {
 				
 			}
 		public void update() {
+			if (bricks.isEmpty()) {
+				game.gameWon();
+			}
 			try {
 			for (Brick b : bricks) {
 				if(b.collision() == true) {
